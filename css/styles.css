@@ -1,0 +1,169 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-brand img {
+  height: 55px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('/assets/imgs/hero-1.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 80px 0;
+}
+
+#about img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* PRODUCTS SECTION */
+#products h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/*  Carousel Styling  */
+.carousel-inner img {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.carousel-caption h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.card img {
+  border-bottom: 1px solid #eee;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.btn-danger {
+  background-color: #d62828;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.btn-danger:hover {
+  background-color: #b71d1d;
+}
+
+.btn-primary {
+  background-color: #004b8d;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #003564;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: 45vh;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  #about {
+    padding: 50px 0;
+  }
+
+  #products h2 {
+    font-size: 2rem;
+  }
+}

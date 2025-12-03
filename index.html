@@ -3,91 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automoblex Wooden Cars</title>
-  <!-- Reset CSS -->
+  <title>Automoblox Wooden Cars</title>
+  <!-- Reset & Custom CSS -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/styles.css">
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src="/asset/imgs/automoblox_logo.jpg" alt="Automoblox Logo" height="50" class="d-inline-block align-text-top">
+          <img src="/assets/imgs/automoblox_logo.jpg" alt="Automoblox Logo" height="50" class="d-inline-block align-text-top">
         </a>
-    
+
         <!-- Toggle Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-    
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+
             <!-- C Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="cSeriesDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                C Series
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="cSeriesDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="cSeriesDropdown" role="button" data-bs-toggle="dropdown">C Series</a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">C9</a></li>
                 <li><a class="dropdown-item" href="#">C9R</a></li>
                 <li><a class="dropdown-item" href="#">C9S</a></li>
               </ul>
             </li>
-    
+
             <!-- A Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="axSeriesDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                A Series
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="axSeriesDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="axSeriesDropdown" role="button" data-bs-toggle="dropdown">A Series</a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">A9</a></li>
                 <li><a class="dropdown-item" href="#">A9S</a></li>
               </ul>
             </li>
-    
+
             <!-- S Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                S Series
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="sSeriesDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown">S Series</a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">S9</a></li>
                 <li><a class="dropdown-item" href="#">S9R</a></li>
               </ul>
             </li>
-            <!-- Other Links -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
-        </div>
+        </div><!-- #navbarNav -->
       </div>
-    </nav>    
+    </nav>
   </header>
 
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+      <div class="hero-text">
+        <h1 class="display-4 fw-bold">Build. Collect. Drive.</h1>
+        <p class="lead mb-4">Explore our premium wooden car kits.</p>
+        <a href="#products" class="btn btn-danger btn-lg mt-3">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="/assets/imgs/about.jpeg" alt="Automoblox Wooden Cars" class="img-fluid rounded shadow">
+        </div>
+        <!-- Text -->
+        <div class="col-md-6">
+          <h2 class="mb-3">About Automoblox</h2>
+          <p>Automoblox wooden cars are designed to inspire creativity and imagination. Each kit allows you to build, customize, and collect premium modular wooden cars.</p>
+          <p>Our mission is to provide high-quality, durable toys that combine fun, design, and educational value for enthusiasts of all ages. Whether you're a collector or a builder, Automoblox encourages hands-on creativity.</p>
+          <a href="#" class="btn btn-danger mt-3">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container py-5">
+      <h2 class="text-center mb-5">Our Kits</h2>
+    
+      <!-- Row 1: C Series Carousel -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div id="cSeriesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/imgs/cars/c9_large.jpg" class="d-block w-100" alt="C9">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>C9</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/imgs/cars/c9r_large.jpg" class="d-block w-100" alt="C9R">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>C9R</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/imgs/cars/c9s_large.jpg" class="d-block w-100" alt="C9S">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>C9S</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cSeriesCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cSeriesCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> <!-- #cSeriesCarousel -->
+        </div>
+      </div>
+    
+      <!-- Row 2: A and S Series -->
+      <div class="row g-4 mt-5">
+        <!-- Column 1: A Series -->
+        <div class="col-md-6">
+          <h4 class="mb-3 text-center">A Series</h4>
+          <div class="row g-3">
+            <!-- A9 -->
+            <div class="col-6">
+              <div class="card h-100 text-center">
+                <img src="/assets/imgs/cars/a9_small.jpg" class="card-img-top" alt="A9">
+                <div class="card-body">
+                  <h5 class="card-title">A9</h5>
+                  <a href="#" class="btn btn-primary btn-sm">View Kit</a>
+                </div><!-- btn -->
+              </div>
+            </div><!-- End A9 -->
+            <!-- A9S -->
+            <div class="col-6">
+              <div class="card h-100 text-center">
+                <img src="/assets/imgs/cars/a9s_small.jpg" class="card-img-top" alt="A9S">
+                <div class="card-body">
+                  <h5 class="card-title">A9S</h5>
+                  <a href="#" class="btn btn-primary btn-sm">View Kit</a>
+                </div><!-- btn -->
+              </div>
+            </div><!-- End A9S -->
+          </div>
+        </div> <!-- End A Series -->
+
+        <!-- Column 2: S Series -->
+        <div class="col-md-6">
+          <h4 class="mb-3 text-center">S Series</h4>
+          <div class="row g-3">
+            <!-- S9 -->
+            <div class="col-6">
+              <div class="card h-100 text-center">
+                <img src="/assets/imgs/cars/s9_small.jpg" class="card-img-top" alt="S9">
+                <div class="card-body">
+                  <h5 class="card-title">S9</h5>
+                  <a href="#" class="btn btn-primary btn-sm">View Kit</a>
+                </div><!-- btn -->
+              </div>
+            </div><!-- End S9 -->
+            <!-- S9R -->
+            <div class="col-6">
+              <div class="card h-100 text-center">
+                <img src="/assets/imgs/cars/s9r_small.jpg" class="card-img-top" alt="S9R">
+                <div class="card-body">
+                  <h5 class="card-title">S9R</h5>
+                  <a href="#" class="btn btn-primary btn-sm">View Kit</a>
+                </div><!-- btn -->
+              </div>
+            </div><!-- End S9R -->
+          </div>
+        </div><!-- End S Series -->
+      </div>
+    </section>
+    
+
+  </main>
+
   <!-- Footer -->
-  <footer class="text-center py-3">
+  <footer class="text-center py-4 bg-light">
     &copy; 2025 Automoblox. All Rights Reserved.
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
