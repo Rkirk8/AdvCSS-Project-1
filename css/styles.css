@@ -87,25 +87,27 @@ h1, h2, h3, h4, h5 {
 }
 
 /*  Carousel Styling  */
+#featuredKit {
+  background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
+  padding: 10px 40px 55px 40px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
 #cSeriesHeader h3 {
   font-size: 1.8rem;
-  margin-bottom: 40px;
   font-weight: 600;
 }
 .carousel-inner img {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
-
-.carousel-caption {
-  display: block !important;
-}
-
 .carousel-caption .caption-content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  
 }
 
 .carousel-caption h5 {
@@ -168,7 +170,12 @@ footer {
 }
 
 /* RESPONSIVE FIXES */
-@media (max-width: 768px) {
+@media (max-width: 991px) {/* fullscreen */
+  .hero-section {
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) { /* tablet */
 
   .hero-section {
     height: 45vh;
@@ -188,5 +195,10 @@ footer {
 
   #products h2 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 575px) { /* phone */
+  .hero-section {
+    height: 45vh;
   }
 }

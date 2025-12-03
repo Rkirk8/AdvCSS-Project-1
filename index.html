@@ -100,12 +100,18 @@
       <h2 class="text-center mb-5">Featured Kits</h2>
     
       <!-- Row 1: C Series Carousel -->
-      <div class="row mb-5">
+      <div class="row mb-5" id="featuredKit">
         <div class="col-12" id="cSeriesHeader">
           <h3 class="mb-3 text-center">The C Series</h3>
         </div><!-- #cSeriesHeader -->
         <div class="col-12">
           <div id="cSeriesCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators top-0">
+              <button type="button" data-bs-target="#cSeriesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="C9"></button>
+              <button type="button" data-bs-target="#cSeriesCarousel" data-bs-slide-to="1" aria-label="C9R"></button>
+              <button type="button" data-bs-target="#cSeriesCarousel" data-bs-slide-to="2" aria-label="C9S"></button>
+            </div><!-- .carousel-indicators -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="/assets/imgs/cars/c9_large.jpg" class="d-block w-100" alt="C9">
@@ -146,19 +152,23 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div><!-- .carousel-inner -->
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#cSeriesCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#cSeriesCarousel" data-bs-slide="next">
-              <span class="bi bi-caret-right-square" aria-hidden="true"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
               <span class="visually-hidden">Next</span>
             </button>
           </div> <!-- #cSeriesCarousel -->
         </div>
-      </div>
+      </div><!-- #featuredKit -->
     
       <!-- Row 2: A and S Series -->
       <div class="row g-4 mt-5">
