@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #about h2 {
+  color: #b71d1d;
   font-size: 2rem;
   margin-bottom: 15px;
 }
@@ -79,20 +80,40 @@ h1, h2, h3, h4, h5 {
 
 /* PRODUCTS SECTION */
 #products h2 {
+  color: #b71d1d;
   font-size: 2.4rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 /*  Carousel Styling  */
+#cSeriesHeader h3 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
 .carousel-inner img {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+.carousel-caption {
+  display: block !important;
+}
+
+.carousel-caption .caption-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
 .carousel-caption h5 {
+  color: #f8f8f8;
+  text-shadow: 0 8px 20px rgb(0, 0, 0);
   font-size: 1.4rem;
   font-weight: 600;
+  margin: 0;
 }
 
 /* CARDS */
