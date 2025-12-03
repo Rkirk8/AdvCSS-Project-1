@@ -4,8 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automoblex Wooden Cars</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="/asset/cars/automoblox_logo.jpg" alt="Automoblox Logo" height="50" class="d-inline-block align-text-top">
+        </a>
+    
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+    
+            <!-- C Series -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="cSeriesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                C Series
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="cSeriesDropdown">
+                <li><a class="dropdown-item" href="#">C9</a></li>
+                <li><a class="dropdown-item" href="#">C9R</a></li>
+                <li><a class="dropdown-item" href="#">C9S</a></li>
+              </ul>
+            </li>
+    
+            <!-- A/X Series -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="axSeriesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                A/X Series
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="axSeriesDropdown">
+                <li><a class="dropdown-item" href="#">A9</a></li>
+                <li><a class="dropdown-item" href="#">A9S</a></li>
+                <li><a class="dropdown-item" href="#">X9</a></li>
+                <li><a class="dropdown-item" href="#">X9X</a></li>
+                <li><a class="dropdown-item" href="#">M9</a></li>
+                <li><a class="dropdown-item" href="#">T9</a></li>
+              </ul>
+            </li>
+    
+            <!-- S Series -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                S Series
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="sSeriesDropdown">
+                <li><a class="dropdown-item" href="#">S9</a></li>
+                <li><a class="dropdown-item" href="#">S9R</a></li>
+              </ul>
+            </li>
+            <!-- Other Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+  </header>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    &copy; 2025 Automoblox. All Rights Reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
