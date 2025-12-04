@@ -86,28 +86,44 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
-/*  Carousel Styling  */
+/*  CAROUSEL SECTION */
 #featuredKit {
   background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
   padding: 10px 40px 55px 40px;
   border-radius: 30px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
+
 #cSeriesHeader h3 {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
 .carousel-inner img {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
+
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  pointer-events: auto;
+}
+
 .carousel-caption .caption-content {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  
+  margin-top: 10px;
+  pointer-events: auto;
 }
 
 .carousel-caption h5 {
@@ -118,8 +134,16 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+/* ensure interactive elements are top layer */
+.carousel-caption a.btn {
+  z-index: 999 !important;
+  pointer-events: auto !important;
+}
+
+
 /* CARDS */
 .card {
+  background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
   border: none;
   border-radius: 12px;
   overflow: hidden;
@@ -169,14 +193,14 @@ footer {
   padding-top: 20px;
 }
 
-/* RESPONSIVE FIXES */
-@media (max-width: 991px) {/* fullscreen */
+/* RESPONSIVE */
+@media (max-width: 991px) { /* fullscreen */
   .hero-section {
     height: 50vh;
   }
 }
-@media (max-width: 768px) { /* tablet */
 
+@media (max-width: 768px) { /* tablet */
   .hero-section {
     height: 45vh;
   }
@@ -197,6 +221,7 @@ footer {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 575px) { /* phone */
   .hero-section {
     height: 45vh;
