@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* global */
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
-/* NAVBAR */
+/* navbar */
 .navbar {
   background-color: #ffffff !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-/* HERO SECTION */
+/* hero section */
 .hero-section {
   background-image: linear-gradient(
       rgba(48, 94, 180, 0.363),
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5 {
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* ABOUT SECTION */
+/* about section */
 #about {
   padding: 80px 0;
 }
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.6;
 }
 
-/* PRODUCTS SECTION */
+/* products section */
 #products h2 {
   color: #b71d1d;
   font-size: 2.4rem;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
-/*  CAROUSEL SECTION */
+/* carousel section */
 #featuredKit {
   background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
   padding: 10px 40px 55px 40px;
@@ -134,14 +134,12 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-/* ensure interactive elements are top layer */
 .carousel-caption a.btn {
   z-index: 999 !important;
   pointer-events: auto !important;
 }
 
-
-/* CARDS */
+/* card */
 .card {
   background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
   border: none;
@@ -164,7 +162,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
-/* BUTTONS */
+/* btns */
 .btn-danger {
   background-color: #d62828;
   border: none;
@@ -185,7 +183,7 @@ h1, h2, h3, h4, h5 {
   background-color: #003564;
 }
 
-/* FOOTER */
+/* footer */
 footer {
   background-color: #ffffff;
   border-top: 1px solid #ddd;
@@ -193,7 +191,13 @@ footer {
   padding-top: 20px;
 }
 
-/* RESPONSIVE */
+.c9-thumb{
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+/* responsive */
 @media (max-width: 991px) { /* fullscreen */
   .hero-section {
     height: 50vh;
