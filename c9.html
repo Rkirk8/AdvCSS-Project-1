@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
@@ -76,26 +74,22 @@
       </div>
     </nav>
   </header>
-
   <main>
-
     <!-- PRODUCT HERO -->
-    <section class="container my-5">
+    <section class="container my-5" id="c9-hero">
       <div class="row g-5">
-
         <!-- LEFT: PRODUCT IMAGES -->
         <div class="col-md-6">
-          <div class="product-main-img mb-3">
+          <div class="product-main-img mb-4">
             <img src="/assets/imgs/cars/c9_large.jpg" alt="Automoblox C9 Sports Car" class="img-fluid rounded shadow-sm">
           </div>
-
-          <div class="d-flex gap-3">
-            <img src="/assets/imgs/cars/c9_back.jpeg" class="img-thumbnail c9-thumb" alt="C9 Back View">
-            <img src="/assets/imgs/cars/c9_front.jpeg" class="img-thumbnail c9-thumb" alt="C9 Front View">
-            <img src="/assets/imgs/cars/c9_parts.jpeg" class="img-thumbnail c9-thumb" alt="C9 Parts">
+          <!-- Thumbnails -->
+          <div class="d-flex justify-content-center gap-3">
+            <img src="/assets/imgs/cars/c9_back.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9 Back View">
+            <img src="/assets/imgs/cars/c9_front.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9 Front View">
+            <img src="/assets/imgs/cars/c9_parts.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9 Parts">
           </div>
         </div>
-
         <!-- RIGHT: PRODUCT DETAILS -->
         <div class="col-md-6">
           <h2 class="product-title">Automoblox C9 Sports Car</h2>
@@ -104,7 +98,7 @@
             The iconic C9 is a sleek, customizable wooden sports car featuring removable wheels,
             modular body parts, and high-quality craftsmanship that Automoblox is known for.
           </p>
-
+          <!-- Product Details -->
           <ul class="list-unstyled my-4">
             <li><strong>Engine:</strong> 3.0L V6 Turbocharged</li>
             <li><strong>Horsepower:</strong> 250 HP</li>
@@ -116,19 +110,18 @@
           <button class="btn btn-danger btn-lg w-100 mb-3">Add to Cart</button>
           <p class="small text-secondary">*Ships within 2–3 business days.</p>
         </div>
-
       </div>
-    </section>
+    </section><!-- #c9-hero -->
 
     <!-- PRODUCT DETAILS -->
     <section class="container my-5">
       <h2 class="mb-4">Product details</h2>
-      <div class="row gx-4 gy-4">
-
+      <div class="row gx-4 gy-4" id="productCards">
+        <!-- Materials -->
         <div class="col-md-4">
           <div class="p-3 border rounded shadow-sm h-100">
             <h5>Materials</h5>
-            <p>Beech wood, polycarbonate, rubber tires</p>
+            <p>Crafted from premium hardwoods and non-toxic paints, ensuring durability and safety for all ages.</p>
           </div>
         </div>
 
@@ -145,8 +138,7 @@
             <p>Recommended 3+ years</p>
           </div>
         </div>
-
-      </div>
+      </div><!-- #productCards -->
     </section>
 
     <!-- RELATED PRODUCTS -->
@@ -159,7 +151,7 @@
             <img src="/assets/imgs/cars/c9r_large.jpg" alt="Automoblox C9R" class="card-img-top">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Automoblox C9R</h5>
-              <p class="card-text">$XX.XX CAD</p>
+              <p class="card-text">$49.99 CAD</p>
               <a href="c9r.html" class="btn btn-outline-dark mt-auto w-100">View product</a>
             </div>
           </div>
@@ -170,7 +162,7 @@
             <img src="/assets/imgs/cars/c9s_large.jpg" alt="Automoblox C9S" class="card-img-top">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Automoblox C9S</h5>
-              <p class="card-text">$XX.XX CAD</p>
+              <p class="card-text">$49.99 CAD</p>
               <a href="c9s.html" class="btn btn-outline-dark mt-auto w-100">View product</a>
             </div>
           </div>
@@ -181,7 +173,7 @@
             <img src="/assets/imgs/cars/s9_large.jpg" alt="Automoblox S9" class="card-img-top">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Automoblox S9</h5>
-              <p class="card-text">$XX.XX CAD</p>
+              <p class="card-text">$49.99 CAD</p>
               <a href="s9.html" class="btn btn-outline-dark mt-auto w-100">View product</a>
             </div>
           </div>

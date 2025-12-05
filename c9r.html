@@ -40,7 +40,6 @@
                 <li><a class="dropdown-item" href="c9s.html">C9S</a></li>
               </ul>
             </li>
-
             <!-- A Series -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="axSeriesDropdown" role="button" data-bs-toggle="dropdown">A Series</a>
@@ -49,7 +48,6 @@
                 <li><a class="dropdown-item" href="a9s.html">A9S</a></li>
               </ul>
             </li>
-
             <!-- S Series -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown">S Series</a>
@@ -58,7 +56,6 @@
                 <li><a class="dropdown-item" href="s9r.html">S9R</a></li>
               </ul>
             </li>
-
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
@@ -66,6 +63,110 @@
       </div>
     </nav>
   </header>
+  <main>
+    <!-- product hero -->
+    <section class="container my-5" id="c9rHero">
+      <div class="row g-5">
+        <!-- LEFT: product images -->
+        <div class="col-md-6">
+          <div class="product-main-img mb-4">
+            <img src="/assets/imgs/cars/c9r_large.jpg" alt="C9R Hero Image" class="img-fluid rounded shadow-sm">
+          </div>
+          <!-- Thumbnails --> <!-- TODO: replace with actual images -->
+          <div class="d-flex justify-content-center gap-3">
+            <img src="/assets/imgs/cars/###" alt="C9R Side View" class="img-thumbnail" id="carPageThumb">
+            <img src="/assets/imgs/cars/###" alt="C9R Interior View" class="img-thumbnail" id="carPageThumb">
+            <img src="/assets/imgs/cars/###" alt="C9R Rear View" class="img-thumbnail" id="carPageThumb">
+          </div>
+        </div>
+        <!-- RIGHT: product details -->
+        <div class="col-md-6">
+          <h2 class="product-title">Automoblox C9R</h2>
+          <p class="h4 text-danger fw-bold mb-3">$49.99</p>
+          <p class="text-muted">
+            The Automoblox C9R is engineered for speed and agility, featuring a lightweight wooden body and customizable parts that allow you to personalize your ride. Whether you're a collector or a racing enthusiast, the C9R delivers an unparalleled driving experience.
+          </p>
+          <ul class="list-unstyled my-4">
+            <li><strong>Engine:</strong>6.0L V8 Turbocharged</li>
+            <li><strong>Horsepower:</strong> 550 HP</li>
+            <li><strong>Transmission:</strong> 10-Speed Automatic</li>
+            <li><strong>0-60 mph:</strong> 3.8 seconds</li>
+            <li><strong>Top Speed:</strong> 200 mph</li>
+          </ul>
+          <button class="btn btn-danger btn-lg w-100 mb-3">Add to Cart</button>
+          <p class="small text-secondary">*Ships within 2–3 business days.</p>
+        </div>
+      </div>
+    </section><!-- #c9r-hero -->
+
+     <!-- product details -->
+    <section class="container my-5">
+      <h2 class="mb-4">Product details</h2>
+      <div class="row gx-4 gy-4" id="productCards">
+        <!-- materials -->
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Materials</h5>
+            <p>Crafted from premium hardwoods and non-toxic paints, ensuring durability and safety for all ages.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Dimensions</h5>
+            <p>Approx. 7–8 inches long; exact size varies by batch</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Age</h5>
+            <p>Recommended 3+ years</p>
+          </div>
+        </div>
+      </div><!-- #productCards -->
+    </section>
+
+    <!-- related products -->
+    <section class="container my-5">
+      <h2 class="mb-4">Related Products</h2>
+      <div class="row gx-4 gy-4" id="relatedProducts">
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/assets/imgs/cars/c9s_large.jpg" class="card-img-top" alt="C9S Sports Car">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox C9S</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="c9s.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/assets/imgs/cars/s9r_large.jpg" class="card-img-top" alt="S9R Sports Car">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox S9R</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="s9r.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/assets/imgs/cars/s9_large.jpg" class="card-img-top" alt="S9 Sports Car">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox S9</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="s9.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
