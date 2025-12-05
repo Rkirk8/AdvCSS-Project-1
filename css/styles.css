@@ -193,10 +193,11 @@ footer {
 
 /* -------- car pages -------- */
 #carPageThumb{
-  width: auto;
-  height: 100px;
+  width: 100px;
+  height: auto;
   border-radius: 8px;
 }
+
 
 /* responsive */
 @media (max-width: 991px) { /* fullscreen */
