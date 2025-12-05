@@ -62,7 +62,108 @@
   </header>
   <main>
     <!-- product hero -->
-    <section class="container my-5" id="c9sHero"></section>
+    <section class="container my-5" id="c9sHero">
+      <div class="row g-5">
+        <!-- LEFT: product images -->
+        <div class="col-md-6">
+          <div class="product-main-img mb-4">
+            <img src="/assets/imgs/cars/c9s_large.jpg" alt="Automoblox C9S Sports Car" class="img-fluid rounded shadow-sm">
+          </div>
+          <!-- Thumbnails --> <!-- TODO: replace with actual images -->
+          <div class="d-flex justify-content-center gap-3">
+            <img src="/assets/imgs/cars/c9s_back.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9S Back View">
+            <img src="/assets/imgs/cars/c9s_front.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9S Front View">
+            <img src="/assets/imgs/cars/c9s_parts.jpeg" class="img-thumbnail" id="carPageThumb" alt="C9S Parts">
+          </div>
+        </div>
+        <!-- RIGHT: product details -->
+        <div class="col-md-6">
+          <h2 class="product-title">Automoblox C9S</h2>
+          <p class="h4 text-danger fw-bold mb-3">$49.99</p>
+          <p class="text-muted">
+            The Automoblox C9S is a sleek and stylish sports car model designed for both play and display. Featuring
+            premium materials and a detailed design, the C9S offers a realistic driving experience for enthusiasts of all ages.
+          </p>
+          <ul class="list-unstyled my-4">
+            <li><strong>Engine:</strong> 3.0L Inline-6 Turbocharged</strong></li>
+            <li><strong>Horsepower:</strong> 400 HP</li>
+            <li><strong>Transmission:</strong> 8-Speed Automatic</li>
+            <li><strong>0-60 mph:</strong> 4.5 seconds</li>
+            <li><strong>Top Speed:</strong> 180 mph</li>
+          </ul>
+          <button class="btn btn-danger btn-lg w-100 mb-3">Add to Car</button>
+          <p class="small text-secondary">*Ships within 2–3 business days.</p>
+        </div>
+      </div>
+    </section><!-- #c9sHero -->
+
+    <!-- product details -->
+    <section class="container my-5">
+      <h2 class="mb-4">Product details</h2>
+      <div class="row gx-4 gy-4" id="productCards">
+        <!-- materials -->
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Materials</h5>
+            <p>Crafted from premium hardwoods and non-toxic paints, ensuring durability and safety for all ages.</p>
+          </div>
+        </div>
+        <!-- dimensions -->
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Dimensions</h5>
+            <p>Approx. 7–8 inches long; exact size varies by batch</p>
+          </div>
+        </div>
+        <!-- age -->
+        <div class="col-md-4">
+          <div class="p-3 border rounded shadow-sm h-100">
+            <h5>Age</h5>
+            <p>Recommended 3+ years</p>
+          </div>
+        </div>
+      </div><!-- #productCards -->
+    </section>
+
+    <!-- related products -->
+    <section class="container my-5">
+      <h2 class="mb-4">Related Products</h2>
+      <div class="row gx-4 gy-4" id="relatedProducts">
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="/assets/imgs/cars/c9r_large.jpg" alt="Automoblox C9R" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox C9R</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="c9r.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/assets/imgs/cars/c9_large.jpg" class="card-img-top" alt="C9 Car">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox C9</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="c9.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/assets/imgs/cars/a9s_large.jpg" class="card-img-top" alt="A9S Sports Car">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Automoblox A9S</h5>
+              <p class="card-text">$49.99 CAD</p>
+              <a href="a9s.html" class="btn btn-danger mt-auto w-100">View product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <!-- Bootstrap JS -->
