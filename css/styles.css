@@ -79,6 +79,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* products section */
+#products {
+  padding: 80px 0;
+}
 #products h2 {
   color: #b71d1d;
   font-size: 2.4rem;
@@ -187,22 +190,111 @@ h1, h2, h3, h4, h5 {
 footer {
   background-color: #ffffff;
   border-top: 1px solid #ddd;
-  margin-top: 60px;
+  margin-top: -10px;
   padding-top: 20px;
 }
 
 /* -------- car pages -------- */
-#carPageThumb{
-  width: 100px;
+/* car page | general */
+.car-page .btn-danger {
+  font-weight: 600;
+}
+/* car page | hero */
+.car-page #c9-hero {
+  background: none;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.car-page .product-main-img img {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  min-height: 155px;
+  object-fit: cover;
 }
 
 
+.car-page .product-title {
+  font-size: 2rem;
+  position: relative;
+}
+
+.car-page #carPageThumb {
+  width: auto;
+  max-width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: no;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.car-page #carPageThumb:hover {
+  transform: scale(1.12);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+/* car page | body content */
+.car-page .body-content{
+  background: linear-gradient(135deg, rgba(214, 40, 40, 0.08) 0%, rgba(75, 138, 222, 0.08) 100%);
+  padding: 5px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.car-page .body-content h2 {
+  color: #b71d1d;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+/* 
+car page | product details */
+.car-page #productCards .border {
+  border: none;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 24px;
+  transition: .25s ease;
+}
+
+.car-page #productCards .border:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* car page | related products */
+.car-page .card {
+  border: none;
+  border-radius: 16px ;
+  overflow: hidden;
+}
+
+.car-page .card-body {
+  background: linear-gradient(180deg, rgba(248, 248, 248, 0.87) 0%, rgba(124, 0, 17, 0.062) 70%);
+  padding: 20px;
+}
+
 /* responsive */
-@media (max-width: 991px) { /* fullscreen */
+@media (max-width: 1200px) { /* large desktop */
+  .car-page #carPageThumb {
+    width: auto;
+    max-width: 110px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 992px) { /* small desktop */
   .hero-section {
     height: 50vh;
+  }
+
+  .car-page #carPageThumb {
+    width: auto;
+    max-width: 90px;
+    height: 50px;
   }
 }
 
@@ -225,6 +317,12 @@ footer {
 
   #products h2 {
     font-size: 2rem;
+  }
+
+  .car-page #carPageThumb {
+    width: auto;
+    max-width: 100px;
+    height: 60px;
   }
 }
 
