@@ -199,8 +199,9 @@ footer {
 .car-page .btn-danger {
   font-weight: 600;
 }
+
 /* car page | hero */
-.car-page #c9-hero {
+.car-page #car-hero {
   background: none;
   padding-top: 10px;
   padding-bottom: 60px;
@@ -212,7 +213,6 @@ footer {
   min-height: 155px;
   object-fit: cover;
 }
-
 
 .car-page .product-title {
   font-size: 2rem;
@@ -265,11 +265,27 @@ car page | product details */
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+.car-page #productCards h5::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b71d1d;
+  margin: 10px 0;
+}
+
 /* car page | related products */
 .car-page .card {
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 16px ;
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.car-page .card p {
+  font-weight: 700;
+  color: #b71d1d;
 }
 
 .car-page .card-body {
