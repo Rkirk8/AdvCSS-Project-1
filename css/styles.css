@@ -202,7 +202,6 @@ footer {
 
 /* car page | hero */
 .car-page #car-hero {
-  background: none;
   padding-top: 10px;
   padding-bottom: 60px;
 }
@@ -314,25 +313,22 @@ car page | product details */
   }
 }
 
-@media (max-width: 768px) { /* tablet */
-  .hero-section {
-    height: 45vh;
+@media (max-width: 767px) {
+  /*  responsive | car page | product hero */
+  .car-page #car-hero {
+    padding: 0 15px 0;
   }
 
-  .hero-text h1 {
-    font-size: 2.2rem;
+  .car-page #car-hero #productImages {
+    margin-top: 0;
+    padding: 2rem 1rem 0 1rem;
   }
 
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  #about {
-    padding: 50px 0;
-  }
-
-  #products h2 {
-    font-size: 2rem;
+  .car-page #car-hero .product-main-img img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
   }
 
   .car-page #carPageThumb {
@@ -340,10 +336,34 @@ car page | product details */
     max-width: 100px;
     height: 60px;
   }
-}
 
-@media (max-width: 575px) { /* phone */
-  .hero-section {
-    height: 45vh;
+  /* responsive | car page | hero details */
+  .car-page #heroDetails {
+    margin-top: 1rem;
+  }
+  /* title & price */
+  .car-page .product-title,
+  .car-page #car-hero h4 {
+    text-align: center;
+  }
+
+  .car-page #car-hero p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* Center the specs list */
+  .car-page #car-hero ul {
+    padding: 0;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .car-page #car-hero ul li {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 }
