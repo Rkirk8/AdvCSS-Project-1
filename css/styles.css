@@ -422,7 +422,8 @@ car page | product details */
     margin: 1rem auto;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 7px;
+    padding: 0 10px;
   }
 
   .car-page #car-hero ul li {
