@@ -4,27 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automoblox | The C9</title>
-
   <!-- CSS -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
+        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
           <img src="/assets/imgs/automoblox_logo.jpg" alt="Automoblox Logo" height="50" class="d-inline-block align-text-top">
         </a>
-
         <!-- Toggle Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -32,54 +29,44 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-
             <!-- C Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="cSeriesDropdown" role="button" data-bs-toggle="dropdown">
-                C Series
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="cSeriesDropdown" role="button" data-bs-toggle="dropdown">C Series</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="c9.html">C9</a></li>
                 <li><a class="dropdown-item" href="c9r.html">C9R</a></li>
                 <li><a class="dropdown-item" href="c9s.html">C9S</a></li>
               </ul>
             </li>
-
             <!-- A Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="aSeriesDropdown" role="button" data-bs-toggle="dropdown">
-                A Series
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="aSeriesDropdown" role="button" data-bs-toggle="dropdown">A Series</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="a9.html">A9</a></li>
                 <li><a class="dropdown-item" href="a9s.html">A9S</a></li>
               </ul>
             </li>
-
             <!-- S Series -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown">
-                S Series
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="sSeriesDropdown" role="button" data-bs-toggle="dropdown">S Series</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="s9.html">S9</a></li>
                 <li><a class="dropdown-item" href="s9r.html">S9R</a></li>
               </ul>
             </li>
-
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </div><!-- #navbarNav -->
       </div>
     </nav>
   </header>
   <main class="car-page">
-    <!-- PRODUCT HERO -->
+    <!-- product hero -->
     <section class="container my-5" id="car-hero">
-      <div class="row g-5">
-        <!-- LEFT: PRODUCT IMAGES -->
-        <div class="col-md-5">
+      <div class="row g-5" id="heroContent">
+        <!-- LEFT: product images -->
+        <div class="col-md-5" id="productImages">
           <div class="product-main-img mb-4">
             <img src="/assets/imgs/cars/c9_large.jpg" alt="Automoblox C9 Sports Car" class="img-fluid rounded shadow-sm">
           </div>
@@ -90,15 +77,14 @@
             <img src="/assets/imgs/cars/c9_large.jpg" class="img-thumbnail" id="carPageThumb" alt="C9 Parts">
           </div>
         </div>
-        <!-- RIGHT: PRODUCT DETAILS -->
-        <div class="col-md-6">
-          <h2 class="product-title">Automoblox C9 Sports Car</h2>
+        <!-- RIGHT: product details -->
+        <div class="col-md-6" id="heroDetails">
+          <h2 class="product-title">Automoblox C9</h2>
           <h4 class="text-danger fw-bold mb-3">$49.99</h4>
           <p class="text-muted">
             The iconic C9 is a sleek, customizable wooden sports car featuring removable wheels,
             modular body parts, and high-quality craftsmanship that Automoblox is known for.
           </p>
-          <!-- Product Details -->
           <ul class="list-unstyled my-4">
             <li><strong>Engine:</strong> 3.0L V6 Turbocharged</li>
             <li><strong>Horsepower:</strong> 250 HP</li>
@@ -106,33 +92,32 @@
             <li><strong>0-60 mph:</strong> 4.5 seconds</li>
             <li><strong>Top Speed:</strong> 155 mph</li>
           </ul>
-
           <button class="btn btn-danger btn-lg w-100 mb-3">Add to Cart</button>
           <p class="small text-secondary">*Ships within 2–3 business days.</p>
         </div>
       </div>
-    </section><!-- #c9-hero -->
+    </section><!-- #car-hero -->
 
     <div class="body-content">
-      <!-- PRODUCT DETAILS -->
-      <section class="container my-5" id="productDetail">
+      <!-- product details -->
+      <section class="container my-5" id="productDetails">
         <h2 class="mb-4">Product details</h2>
         <div class="row gx-4 gy-4" id="productCards">
-          <!-- Materials -->
+          <!-- materials -->
           <div class="col-md-4">
             <div class="p-3 border rounded shadow-sm h-100">
               <h5>Materials</h5>
               <p>Crafted from premium hardwoods and non-toxic paints, ensuring durability and safety for all ages.</p>
             </div>
           </div>
-          <!-- Dimensions -->
+          <!-- dimensions -->
           <div class="col-md-4">
             <div class="p-3 border rounded shadow-sm h-100">
               <h5>Dimensions</h5>
               <p>Approx. 7–8 inches long; exact size varies by batch</p>
             </div>
           </div>
-          <!-- Age -->
+          <!-- age -->
           <div class="col-md-4">
             <div class="p-3 border rounded shadow-sm h-100">
               <h5>Age</h5>
@@ -140,16 +125,16 @@
             </div>
           </div>
         </div><!-- #productCards -->
-      </section><!-- #productDetail -->
+      </section>
 
-      <!-- RELATED PRODUCTS -->
+      <!-- related products -->
       <section class="container my-5" id="relatedProducts">
         <h2 class="mb-4">Related Products</h2>
         <div class="row gx-4 gy-4">
-          <!-- Product Card 1 -->
+          <!-- product card 1 -->
           <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-              <img src="/assets/imgs/cars/c9r_large.jpg" alt="Automoblox C9R" class="card-img-top">
+            <div class="card h-100 shadow-sm">
+              <img src="/assets/imgs/cars/c9r_large.jpg" class="card-img-top" alt="C9R Sports Car">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Automoblox C9R</h5>
                 <p class="card-text">$49.99 CAD</p>
@@ -157,10 +142,11 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 2 -->
+
+          <!-- product card 2 -->
           <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-              <img src="/assets/imgs/cars/c9s_large.jpg" alt="Automoblox C9S" class="card-img-top">
+            <div class="card h-100 shadow-sm">
+              <img src="/assets/imgs/cars/c9s_large.jpg" class="card-img-top" alt="C9S Sports Car">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Automoblox C9S</h5>
                 <p class="card-text">$49.99 CAD</p>
@@ -168,10 +154,11 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 3 -->
+
+          <!-- product card 3 -->
           <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-              <img src="/assets/imgs/cars/s9_large.jpg" alt="Automoblox S9" class="card-img-top">
+            <div class="card h-100 shadow-sm">
+              <img src="/assets/imgs/cars/s9_large.jpg" class="card-img-top" alt="S9 Sports Car">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Automoblox S9</h5>
                 <p class="card-text">$49.99 CAD</p>
@@ -179,11 +166,10 @@
               </div>
             </div>
           </div>
-
         </div>
-      </section><!-- #relatedProducts -->
-    </div><!-- .body-content -->
-  </main><!-- .car-page -->
+      </section>
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="text-center py-4 bg-light">
@@ -191,12 +177,7 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-          crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-          integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-          crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -329,7 +329,7 @@ car page | product details */
 
   .car-page #car-hero .product-main-img img {
     width: 100%;
-    max-height: 240px;
+    max-height: 280px;
     object-fit: cover;
     border-radius: 12px;
   }
