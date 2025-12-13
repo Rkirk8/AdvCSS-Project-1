@@ -245,11 +245,15 @@ footer {
 .car-page .body-content h2 {
   color: #b71d1d;
   font-size: 2.4rem;
-  margin-bottom: 20px;
+  padding-bottom: 1rem;
   font-weight: 600;
 }
 /* 
 car page | product details */
+.car-page #productDetails {
+  padding: 1rem 0 1rem 0;
+}
+
 .car-page #productCards .border {
   border: none;
   background: #ffffff;
@@ -274,6 +278,10 @@ car page | product details */
 }
 
 /* car page | related products */
+.car-page #relatedProducts {
+  padding: 1rem 0 2rem 0;
+}
+
 .car-page .card {
   border: 1px solid #ddd;
   border-radius: 16px ;
@@ -293,11 +301,27 @@ car page | product details */
 }
 
 /* responsive */
+
 @media (max-width: 1200px) { /* large desktop */
   .car-page #carPageThumb {
     width: auto;
     max-width: 110px;
     height: 70px;
+  }
+}
+
+@media (max-width: 1025px) {/* laptop */
+  .car-page .product-title {
+    font-size: 1.8rem;
+  }
+
+  .car-page .carPageThumb {
+    max-width: 120px;
+    height: 80px;
+  }
+
+  .car-page #heroDetails p {
+    font-size: 0.95rem;
   }
 }
 
@@ -313,18 +337,41 @@ car page | product details */
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) { /* tablet */
+  .car-page #car-hero {
+    padding-bottom: 40px;
+  }
+
+  .car-page .product-title {
+    font-size: 1.6rem;
+  }
+
+  .car-page .carPageThumb {
+    max-width: 100px;
+    height: 65px;
+  }
+
+  .car-page #heroDetails ul {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 576px) { /* mobile */
+  /* index | hero */
   .hero-section {
     height: 30vh;
   }
-  /*  responsive | car page | product hero */
-  .car-page #car-hero {
-    padding: 0 15px 0;
+
+  /* car page | hero & body content */
+  .car-page #car-hero, .car-page .body-content {
+    padding: 0 15px;
   }
 
+  /* car page | product images */
   .car-page #car-hero #productImages {
     margin-top: 0;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
   }
 
   .car-page #car-hero .product-main-img img {
@@ -340,29 +387,42 @@ car page | product details */
     height: 60px;
   }
 
-  /* responsive | car page | hero details */
+  /* car page | hero details */
   .car-page #heroDetails {
-    margin-top: 1rem;
-  }
-  /* title & price */
-  .car-page .product-title,
-  .car-page #car-hero h4 {
-    text-align: center;
+    margin: 0;
+    text-align: center; 
   }
 
+  /* car page | hero details | title & price */
+  .car-page #productDetails {
+    padding: 0.25rem 0 0.25rem 0;
+  }
+
+  /* put title and price on the same line */
+  .car-page #heroDetails .product-title,
+  .car-page #heroDetails h4 {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 0;
+  }
+
+  .car-page #heroDetails #productPrice {
+    margin: 0 10px;
+  }
+
+  /* car page | | hero details | description */
   .car-page #car-hero p {
     font-size: 0.95rem;
     text-align: center;
+    margin: 0;
   }
 
-  /* Center the specs list */
+  /* car page | hero details | list */
   .car-page #car-hero ul {
-    padding: 0;
     margin: 1rem auto;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    
   }
 
   .car-page #car-hero ul li {
@@ -370,10 +430,118 @@ car page | product details */
     font-size: 0.95rem;
     line-height: 1.4;
   }
+
+  /* car page | body content | product details */
+  .car-page .body-content h2 {
+    padding-bottom: 0;
+  }
+
+  /* car page | body content | product cards */
+  .car-page #productCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    justify-items: center;
+  }
+
+  .car-page #productCards .col-md-4:last-child {
+    grid-column: 1 / -1; /* spans entire row */
+    max-width: 100%;
+  }
+
+  .car-page #productCards .col-md-4 {
+    flex: unset; 
+    width: 100%;
+  }
+
+  /* car page | related products */
+  /* product cards stay in a row */
+  .car-page #relatedProducts .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 0.25rem;
+    justify-content: space-between;
+  }
+
+  .car-page #relatedProducts .col-md-4 {
+    flex: 1 1 auto; /* allow cards to shrink to fit */
+    max-width: 33%;
+  }
+
+  .car-page #relatedProducts .card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* car page | related products | card content */
+  .car-page #relatedProducts .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-page #relatedProducts .card-body{
+    padding: 6px;
+  }
+
+  .car-page #relatedProducts .card-body .btn-danger{
+    padding: 6px 6px;
+  }
 }
-/* just for the list to wrap if they have a tiny screen */
-@media (max-width: 450px){
+
+@media (max-width: 376px) {
+  /* car page | hero details | list */
   .car-page #car-hero ul{
     flex-wrap: wrap;
+  }
+
+  .car-page #relatedProducts .col-md-4 {
+    max-width: 33;
+  }
+
+  /* car page | related products | card content */
+  .car-page #relatedProducts .card-body{
+    padding: 7px;
+  }
+
+  .car-page #relatedProducts .card-title{
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+}
+
+ @media (max-width: 327px){ /*smallest screen */
+  /* car page | hero details | list */
+  .car-page #car-hero ul{
+    flex-wrap: wrap;
+  }
+
+  /* car page | related products */
+  .car-page #relatedProducts .row{
+    gap: 0;
+  }
+
+  .car-page #relatedProducts h2{
+    font-size: 2.3rem;
+  }
+
+  /* car page | related products | card content */
+  .car-page #relatedProducts .card-body{
+    padding: 7px;
+  }
+
+  .car-page #relatedProducts .card-title{
+    font-size: 11px;
+    flex-wrap: wrap;
+    margin: 0 0 5px 0;
+  }
+
+  .car-page #relatedProducts .card-text{
+    font-size: 11px;
+    margin: 0 0 5px 0;
+  }
+
+  .car-page #relatedProducts a {
+    font-size: 13px;
   }
 }
